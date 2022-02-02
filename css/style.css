@@ -490,17 +490,25 @@ img {
   outline: none;
   color: var(--revers-color);
 }
-.subscrite-button {
+.subscrite-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscrite-btn {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex; */
+  display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--revers-color);
+  min-width: 200px;
+  min-height: 50px;
   background-color: var(--active-color);
   cursor: pointer;
   background: #2196f3;
@@ -508,6 +516,15 @@ img {
   border-radius: 4px;
   border: none;
   margin-left: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscrite-btn:hover,
+.subscrite-btn:focus {
+  background-color: #188ce8;
+}
+.submit-icon {
+  fill: var(--revers-color);
+  margin-left: 10px;
 }
 /*---Portfolio----*/
 .portfolio {
@@ -544,6 +561,8 @@ img {
 .filter-btn:focus {
   background-color: var(--active-color);
   color: var(--revers-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-name-container {
   padding: 20px 24px;
@@ -684,11 +703,14 @@ img {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   padding: 12px 16px;
   resize: none;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy-field {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .policy-text {
   font-style: normal;
@@ -712,6 +734,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .policy-icon {
   fill: transparent;
@@ -723,6 +747,35 @@ img {
 .policy-check:checked + .policy-text .policy-icon {
   border: none;
   fill: var(--revers-color);
+}
+.policy-link {
+  color: var(--active-color);
+  text-decoration: underline;
+  padding-left: 5px;
+}
+.submit-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: block;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.06em;
+  color: var(--revers-color);
+  background-color: var(--active-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #188ce8;
 }
 .modal-close {
   width: 30px;
